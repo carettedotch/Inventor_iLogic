@@ -1,0 +1,5 @@
+'Very simple code to select the view base in an Inventor drawing
+Dim doc As DrawingDocument = ThisDoc.Document
+Dim oSheet As Sheet = doc.ActiveSheet
+Dim oView As DrawingView = oSheet.DrawingViews.Item(1)'Select View for Item number
+ThisApplication.CommandManager.DoSelect(oView)'Select View
